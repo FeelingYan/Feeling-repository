@@ -50,6 +50,10 @@ uint16 Pro_Bar_Init(t_ProBarInfo* bar,uint16 argc,const char* argv[])
 
 
             bar->ucbar[0] = '\0';
+            default :
+                printf("input error\n");
+                exit(1);
+                break;
         }
      }
     printf("%s""----     the bar init was finish!     ----\n"WHITE,bar->tColor.ucInitMsg);
