@@ -13,10 +13,10 @@
 
 int main (int argc,const char*argv[])
 {
-    t_ProBarInfo bar;
+    t_ProBarInfo Progress_Bar;
 
-    Pro_Bar_Init(&bar,argc,argv);
-    Pro_Bar_Run(&bar);
+    Pro_Bar_Init(&Progress_Bar,argc,argv);
+    Pro_Bar_Run(&Progress_Bar);
 
     printf("I am Feeling\n");
     return 0;

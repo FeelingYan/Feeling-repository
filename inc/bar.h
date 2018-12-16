@@ -21,8 +21,12 @@
 #define WHITE "\e[37;40m"
 
 
-
-uint16 Pro_Bar_Init(t_ProBarInfo *bar,uint16 argc,const char* argv[]);
+void Memory_Init(t_ProBarInfo *bar);
+void Default_Style(t_ProBarInfo* bar);
+void Transfer_Style(t_ProBarInfo* DesBar, t_ProBarInfo* SrcBar);
 void Pro_Bar_Run(t_ProBarInfo *bar);
+uint8 Load_Stytle(t_ProBarInfo* bar);
+uint8 Judge_Input(uint16 argc,const char *argv[]);
+uint16 Pro_Bar_Init(t_ProBarInfo *bar,uint16 argc,const char* argv[]);
 
 #endif

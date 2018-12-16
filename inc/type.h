@@ -12,6 +12,7 @@
 #define true 1
 #define BAR_LEN_MAX 101
 #define COLOR_LEN_MAX 10
+#define SHAPE_LEN_MAX 1
 typedef unsigned char uint8;
 typedef signed int sint8;
 typedef unsigned int uint16;
@@ -66,12 +67,12 @@ typedef struct
     //
     // The shape of unfinishing char.
     //
-    uint8 ucUnfinChar;
+    uint8 *ucUnfinChar;
 
     //
     // The shape of finish char.
     //
-    uint8 ucFinChar;
+    uint8 *ucFinChar;
 
 }t_BarShapeInfo;
 
